@@ -7,7 +7,7 @@ st.title('S&P 500 App')
 
 st.markdown("""
 This app retrieves the list of the **S&P 500** (from Wikipedia) and its corresponding **stock closing price** (year-to-date)!
-* **Python libraries:** base64, pandas, streamlit, matplotlib, seaborn
+* **Python libraries:** base64, pandas, streamlit, pandas
 * **Data source:** [Wikipedia](https://en.jinzhao.wiki/wiki/List_of_S&P_500_companies).
 """)
 
