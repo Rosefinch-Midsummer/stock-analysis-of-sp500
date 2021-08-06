@@ -14,15 +14,9 @@ This app retrieves the list of the **S&P 500** (from Wikipedia) and its correspo
 st.sidebar.header('User Input Features')
 
 # Web scraping of S&P 500 data
-#
-@st.cache
-def load_data():
-    url = 'https://en.jinzhao.wiki/wiki/List_of_S&P_500_companies'
-    html = pd.read_html(url, header = 0)
-    df = html[0]
-    return df
 
-df = load_data()
+df = pd.read_csv('SP500.csv')
+
 sector = df.groupby('GICS Sector')
 
 # Sidebar - Sector selection
